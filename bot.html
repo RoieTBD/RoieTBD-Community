@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bot RoieTBD Community</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    </head>
+    <body>
+        <header>
+            <a href="index.html"><img class="headerlogo" src="pictures/wix.png" alt="R letter" title="RoieTBD Community's logo"></a>
+            <p>RoieTBD Community</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="selected">Bot</li>
+                    <li><a href="about-us.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="title">Bot</h1>
+        <div class="textbox">
+            <img src="pictures/Greetings!.png" alt="The avatar image of the bot Greetings!" class="aboutme">
+            Welcome to the bot page!<br><br>
+            The bot Greetings was made to help Discord owners to create custom "welcome" and "goodbye" messages that looks nice, instead of the boring default Discord ones.<br>
+            Greetings is offering to make new default messages for that use, and the owners can decide to customize these automatically generated messages with the help of some variables.<br><br><br><br><br><br>
+            The default "welcome" message is:<br><br>
+            <span style="font: 18px sans-serif;">Hello {{member}}!,<br>welcome to {{server.name}}!</span><br><br><br>
+            And the default "goodbye" message is:<br><br>
+            <span style="font: 18px sans-serif;">Goodbye, {{member.name}}, we hope to see you again...</span>
+        </div>
+        <div ></div>
+        <div class="textbox" style="margin: 100px 400px;">
+            <h2 class="title">Commands & Variavles List</h2>
+            <p class="commandCategory">Commands</p>
+            <ul class="commandsList">
+                <li>g>setWelcomeChannel [#general | general | ID]</li>
+                <dd>Sets the welcome channel to the channel that was given with mention (#)/name/ID.</dd>
+                <li>g>setFarewellsChannel [#general | general | ID]</li>
+                <dd>Literally like the first command but with the channel that notifies on members who left the server.</dd>
+                <li>g>setWelcomeMessage [text]</li>
+                <dd>Updates the message for the members who join the server, which is sent in the welcome channel.</dd>
+                <li>g>setFarewellsMessage [text]</li>
+                <dd>Updates the notification message of the members who left the server, which is sent in the goodbye channel.</dd>
+            </ul>
+            <p class="commandCategory">Variables</p>
+            <ul class="commandsList">
+                <li>{{member}}</li>
+                <dd>This variable expresses the mention of the member who joined the server.</dd>
+                <li>{{member.name}}</li>
+                <dd>The name that is displayed in the server of the member.</dd>
+                <li>{{member.username}}</li>
+                <dd>The username of the memeber.</dd>
+                <li>{{member.tag}}</li>
+                <dd>The four numbers after the hashtag in the discriminator of the member.</dd>
+                <li>{{memeber.id}}</li>
+                <dd>The ID of the member.</dd>
+                <li>{{member.discriminator}}</li>
+                <dd>The username of the member with a hashtag and then the tag of the member.</dd>
+                <li>{{member.joinedAt}}</li>
+                <dd>The UTC date the member joined the server.</dd>
+                <li>{{member.createdAt}}</li>
+                <dd>The UTC date the member created his account.</dd>
+                <li>{{member.avatarURL}}</li>
+                <dd>The URL of the member's avatar image, sending this will result in an image popping up.</dd>
+                <li>{{server.name}}</li>
+                <dd>The name of the server.</dd>
+                <li>{{server.id}}</li>
+                <dd>The ID of the server.</dd>
+                <li>{{server.owner}}</li>
+                <dd>This variable expresses the mention of the server owner.</dd>
+                <li>{{server.owner.name}}</li>
+                <dd>The name that is displayed in the server of the owner.</dd>
+                <li>{{server.owner.username}}</li>
+                <dd>The username of the owner.</dd>
+                <li>{{server.ownerID}}</li>
+                <dd>The ID of the owner.</dd>
+                <li>{{server.afkChannel}}</li>
+                <dd>This variable expresses the mention of the server's A.F.K channel.</dd>
+                <li>{{server.afkChannelID}}</li>
+                <dd>The ID of the A.F.K channel.</dd>
+                <li>{{server.afkTimeout}}</li>
+                <dd>This variable expresses the in-server setting: A.F.K Timeout.</dd>
+                <li>{{server.createdAt}}</li>
+                <dd>The UTC date the server has been created.</dd>
+                <li>{{server.iconURL}}</li>
+                <dd>The URL of the server's icon image, sending this will result in an image popping up.</dd>
+                <li>{{server.large}}</li>
+                <dd>According to Discord rules, this property will be false or true depending on if the server has large or small amount of members.</dd>
+                <li>{{server.userCount}}</li>
+                <dd>The total number of users in the server, this includes bots!</dd>
+                <li>{{server.botCount}}</li>
+                <dd>The number of bot users in the server.</dd>
+                <li>{{server.memberCount}}</li>
+                <dd>The number of members in the server.</dd>
+                <li>{{server.nameAcronym}}</li>
+                <dd>Do you remember when you created the server and gave it a name, and the server image was a short version of the name? Well that text is saved in here.</dd>
+                <li>{{server.region}}</li>
+                <dd>The server region.</dd>
+                <li>{{server.roles}}</li>
+                <dd>A list of the server roles. This does not include the <span style="color: #0020FF;font-weight: bold;">@everyone</span> role. Example: <span style="background-color: #36393F;color: #DCDDDE;border: solid 1px #3E4147;border-radius: 5px;padding: 2px;">The roles of our server are: Community, Mod, Admin</span><br>Notice that there is no dot at the end.</dd>
+                <li>{{server.splashURL}}</li>
+                <dd>The URL of the server's splash image, must be verified at Discord!</dd>
+                <li>{{server.systemChannel}}</li>
+                <dd>This variable expresses the mention of the default welcome & goodbye channel, make sure it is set to none so you won't have the notifications of Discord, rather ours.</dd>
+                <li>{{server.systemChannelID}}</li>
+                <dd>The ID of the default welcome & goodbye channel.</dd>
+                <li>{{server.systemChannel.name}}</li>
+                <dd>The name of the default welcome & goodbye channel.</dd>
+                <li>{{server.verificationLevel}}</li>
+                <dd>A number in the range 0-4 (including), this number expresses the verification level in the in-server setting: Moderation.</dd>
+                <li>{{server.verified}}</li>
+                <dd>True or false, depends on if the server is verified by Discord or not.</dd>
+            </ul>
+        </div>
+        <footer>
+            <div>
+                <p id="year"></p><p class="second">Contact: <a href="mailto:roiesholet@gmail.com">roiesholet@gmail.com</a></p>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

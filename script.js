@@ -1,0 +1,1 @@
+document.getElementById("year").innerHTML = `&copy; RoieTBD Community 2018-${new Date().getFullYear()}`;
